@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form>
+      <table>
+        <tr>
+          <td>Number 1:</td>
+          <td><input type="number" id="num1" /></td>
+        </tr>
+        <tr>
+          <td>Number 2:</td>
+          <td><input type="number" id="num2" /></td>
+        </tr>
+        <tr>
+          <td>Operator:</td>
+          <td>
+            <input type="button" id="btn" onclick="add()" value="+" />
+            <input type="button" id="btn" onclick="sub()" value="-" />
+            <input type="button" id="btn" onclick="mul()" value="*" />
+            <input type="button" id="btn" onclick="div()" value="/" />
+          </td>
+        </tr>
+        <tr>
+          <td>Result:</td>
+          <td><label id="result"></label></td>
+        </tr>
+      </table>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
